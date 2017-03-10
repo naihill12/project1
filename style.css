@@ -1,0 +1,225 @@
+
+
+hr{
+    border-bottom: 4px solid #111;
+    margin-bottom: 50px;
+}
+
+body{
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background-color: #f9d1ad;
+}
+nav{
+    height:25px;
+    background-color:lightgrey;
+    border:5px solid #CCC;
+}
+header{
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #111;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    text-shadow: -1px 1px 0 white, -2px 2px 0 #111;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    background-color: #5c8fff;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.head{
+    text-align: center;
+    position: relative;
+}
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+
+}
+.content{
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    margin: 30px 2% 0 2%;
+}
+
+
+.collumn{
+    font-size: 14px;
+    line-height: 20px;
+    width: 17.5%;
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+.collumn + .collumn {
+    border-left: 1px solid #2f2f2f;
+}
+.collumn .headline{
+    text-align: center;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin: 0 auto;
+
+
+}
+.collumn .headline.hl1{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+
+}
+
+.collumn .headline.hl2{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+
+.collumn .headline.hl2:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl2:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 13px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl3{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl4:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 13px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl5{
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-style: italic;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6{
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl6:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 13px;
+    display: block;
+    margin: 0 auto;
+
+}
+.collumn .headline.hl7{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl8{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl9{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl10{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+
+.media {
+    filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+    width: 100%;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
